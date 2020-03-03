@@ -1,0 +1,148 @@
+/* Spaghetti CSS code, please ignore quick hacks */
+
+body {
+    margin: 0 2rem 2rem;
+    background-color: #eee;
+  }
+  
+  em {
+    font-style: italic;
+  }
+  
+  h1 {
+    text-align: left;
+    color: black;
+    font-size: 42px;
+  }
+  
+  p {
+    color: black;
+  }
+  
+  h2 {
+    text-align: left;
+    color: black;
+    margin-bottom: -16px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p,
+  em, ul,li {
+    font-family: "Poppins";
+    text-align: left;
+    color: black;
+  }
+  
+  .page-wrapper {
+    margin: 15px;
+  }
+  
+  .max-width {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 calc(50% - 2rem);
+  }
+  
+  
+  .column.food {
+    padding-top: 7rem;
+  }
+  
+  .column.age {
+    padding-top: 5rem;
+  }
+  
+  .row.section {
+    padding: 3rem 0 4rem;
+  }
+  
+  .hr {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://images.unsplash.com/photo-1562245376-3f9dae9f0e73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  
+    height: 450px;
+  
+    margin-left: calc(-50vw + 50%);
+    width: 100vw;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text h1 {
+    font-family: "Noto Serif SC";
+  
+    margin-left: 30px;
+    color: white;
+    font-size: 35px;
+  }
+  
+  .hero-text p {
+    font-family: "Noto Serif SC";
+  
+    color: white;
+    margin-left: 30px;
+    margin-top: -12px;
+  }
+  
+  .foodchart-container {
+    height: 380px;
+  }
+  
+  a.source::after {
+    content: "";
+    display: inline-block;
+    width: 22.5px;
+    height: 19.5px;
+    background: url("./externalLink.svg");
+    margin-left: 0.5rem;
+  }
+  
+  input + em {
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .diabetes-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  
+  .diabetes-img-container img {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
