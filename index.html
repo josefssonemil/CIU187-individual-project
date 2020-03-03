@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Project 8</title>
+  <meta charset="utf-8" />
+  <meta content="utf-8" http-equiv="encoding" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <script type="module" src="./script.js" defer></script>
+
+  <!-- Step 1) Load D3.js -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="https://cdnjs.com/libraries/rangeslider.js"></script>
+
+  <!-- import the webpage's javascript file -->
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>
+        An increase in type-2 diabetes and sugar consumption
+      </h1>
+      <p>
+        More people than ever before are being diagnosed with type-2 diabetes.
+        There is also a clear increase over time in our consumption of sugars.
+      </p>
+    </div>
+  </div>
+
+  <div class="row section max-width">
+
+    <div class="column">
+      <h3>Consumption of different sugar rich foods in Sweden <br />(kg or litres per year per person)</h3>
+      <div class="foodchart-container">
+        <canvas id="foodChart"> </canvas>
+      </div>
+      <h3 id="year-text">Year:</h3>
+      <input type="range" id="foodSlider" min="1960" max="2018" value="1960" />
+      <em>(Use the slider to display the year's data)</em>
+    </div>
+
+    <div class="column food">
+      <h2>
+        Sweets on the rise
+      </h2>
+      <p>While we historically did purchase more raw sugar, this also implies that people had to cook their own sweets.
+        Today no one has to go through this hassle since soft drinks and sweets are available everywhere. This shift in
+        consumption is clearly seen in the visualization on the left.</p>
+
+        <p>
+          The data also shows a clear trend shift, where the consumption of added sugars now mainly comes from soft drinks. Public health data also shows that 80% of our sugar consumption comes from the sugar added in ready-made foods and drinks. Looking at the data, it becomes clear that soft drinks are a dominant source of added sugar.
+        </p>
+    </div>
+  </div>
+
+
+  <hr class="max-width">
+
+  <div class="row section max-width">
+
+
+    <div class="column">
+
+
+      <canvas id="myChart"></canvas>
+
+    </div>
+
+
+    <div class="column">
+      <h2>
+        Diabetes on the rise
+      </h2>
+      <p>Diabetes is still rising quickly in Sweden, even though the pace has slowed down a bit. Among those diagnosed, 90% of these are diagnosed with an unhealthy lifestyle as the main cause.</p>
+   
+      <p>
+        Furthermore, the Swedish government suspects that a third of today's cases are still undiagnosed. Currently, about 4% of the Swedish population already have diabetes. At the current pace, the number of affected Swedes could rise to a million by 2050.
+      </p>
+    </div>
+  </div>
+
+  <hr class="max-width">
+  <div class="row section max-width">
+
+    <div class="column">
+      <h3>Diabetes distribution among men and women in different age groups</h3>
+      <canvas id="diabetesChartTwo"> </canvas>
+      <h3 id="diabetes-year-text">Year:</h3>
+      <input type="range" id="diabetesSlider" min="2007" max="2013" value="2007" />
+      <em>(Use the slider to display the year's data)</em>
+    </div>
+
+    <div class="column age">
+      <h2>
+        How does age relate to diabetes diagnoses?
+      </h2>
+      <p>
+        The amount of diabetes patients is most prevalent among the elderly, tough there is also an increase in reported
+        cases among younger people. People under 20 have over four times more cases of diabetes than those aged 20-44.
+        Meanwhile, there is also an increase across all age groups, though only a marginal one for the age-group 20-44.
+      </p>
+      
+    </div>
+
+  </div>
+
+  <hr class="max-width">
+
+  <div class="row section max-width">
+
+    <div class="column">
+      <div class="diabetes-img-container">
+        <img src="./diabetes_illnesses.svg" alt="The illnesses of diabetes">
+      </div>
+    </div>
+
+    <div class="column">
+      <h2>Diabetes effects our bodies</h2>
+      <p>The excess blood sugar in diabetes can wreak havoc on blood vessels all over the body and cause complications. It can severely damage the eyes, kidneys, nerves, and other body parts; cause sexual problems; and double the risk of heart attack and stroke.</p>
+    
+      <h2>Examples of effects on our bodies</h2>
+      
+      <p><b>Cardiovascular disease:</b><br> Diabetes dramatically increases the risk of various cardiovascular problems, including coronary artery disease with chest pain (angina), heart attack, stroke and narrowing of arteries (atherosclerosis).</p>
+
+      <p><b>Nerve damage (neuropathy):</b><br> Excess sugar can injure the walls of the tiny blood vessels (capillaries) that nourish your nerves, especially in your legs. </p>
+      
+      <p><b>Depression:</b><br> Depression symptoms are common in people with type 1 and type 2 </p>
+    
+    </div>
+
+  </div>
+
+  <hr class="max-width">
+
+  <div class="row section max-width">
+    <h2>Diving into the consumption</h2>
+
+    <p>As seen above, sugar consumption and diabetes cases are on the rise. Meanwhile, one has to be careful about assuming that there is a correlation, solely based on this fact. Furthermore, the data below shows that there is a huge difference between the highest consuming 5% and the lowest consuming 5% for both men and women. Where the highest consuming men and women both eat more than 400% above the daily recommendation.</p>
+    <div class="column" style="flex-basis:75%;">
+      <div class="diabetes-img-container">
+        <img src="sugar-consumption.svg" style="width:100%">
+
+      </div>
+    </div>
+
+    <div class="column" style="flex-basis: 25%;">
+  
+      <div class="diabetes-img-container">
+        <img src="foods.svg" style="width:85%;">
+
+      </div>
+
+    </div>
+    
+    <h3>We eat more sugar compared to 50 years ago and diabetes diagnoses are increasing. 
+        Meanwhile, it is expected that almost 1 million Swedes will have diabetes by 2050.
+        Staying healthy, in different ways, is the key factor to reduce the risk of diabetes,
+        and eating less sugars is one way to stay healthy.
+    </h3>
+
+    </div>
+
+  </div>
+
+  <div class="row section max-width">
+  </div>
+  <hr class="max-width">
+  <footer class="max-width">
+    <h3>Sources:</h3>
+    <p>
+      <a href="https://www.livsmedelsverket.se/globalassets/publikationsdatabas/rapporter/2011/riksmaten_2010_20111.pdf"
+        class="source" target="blank" rel="noreferrer">
+        Livsmedelsverket. (2011). Livsmedels- och näringsintag bland vuxna i Sverige.
+      </a>
+    </p>
+    <p>
+      <a href="https://www.kostfonden.se/syna-sockret-dag-2-mycket-att-vinna-pa-en-halverad-sockerkonsumtion/"
+        class="source" target="blank" rel="noreferrer">
+        Kostfonden. (2018). Syns sockret dag 2: Mycket att vinna på en halverad sockerkonsumtion.
+      </a>
+    </p>
+    <p>
+      <a href="http://www.jordbruksverket.se/webdav/files/SJV/Amnesomraden/Statistik,%20fakta/Livsmedel/JO44SM1701/JO44SM1701_tabeller14.htm"
+        class="source" target="blank" rel="noreferrer">
+        Jordbruksverket. (2016). Livsmedelskonsumtion och näringsinnehåll - JO44SM1701 - Tabell 7b.
+        Potatis, potatisprodukter, socker, sirap, kaffe, te och kakao, kg per person
+        och år.
+      </a>
+    </p>
+    <p>
+      <a href="https://www.ndr.nu/#/arsrapport" class="source" target="blank" rel="noreferrer">
+        Nationella diabetesregistret. (2018). Årsrapport.
+      </a>
+    </p>
+    <p>
+      <a href="https://diabeticdesigned.se/diabetes-blinda/" class="source" target="blank" rel="noreferrer">
+        Diabetic Designed. (2017). Varje år blir 100 personer med diabetes blinda!
+      </a>
+    </p>
+    <p>
+      <a href="https://tradingeconomics.com/sweden/diabetes-prevalence-percent-of-population-ages-20-to-79-wb-data.html?fbclid=IwAR3YQbcJwjtssnSC1FDytl5sgdS2TFcdIlrv8B8bu0k6aJBPhlXsfT7-DKs"
+        class="source" target="blank" rel="noreferrer">
+        Trading Economics. (2020). Sweden - Diabetes Prevelance (% Of Population Ages 20 to 79)
+      </a>
+    </p>
+    <p>
+      <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4664416/" class="source" target="blank" rel="noreferrer">
+        Andersson, T., Ahlblom, A. & Calrsson S. (2015). Diabetes Prevelance in Sweden at Present and Projections for
+        Year 2050.
+      </a>
+    </p>
+  </footer>
+  </div>
+</body>
+
+</html>
