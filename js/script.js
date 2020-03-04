@@ -1,4 +1,4 @@
-import * as foodChart from "./foodChart.js";
+import * as foodChart from "./foodChart_new.js";
 import * as diabetesAgeChart from "./diabetesAgeChart.js";
 import * as diabetesGeneralChart from "./diabetesGeneral.js";
 
