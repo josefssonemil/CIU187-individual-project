@@ -210,8 +210,8 @@ const updateDiabetesAgeChart = year => {
   diabetesAgeChart.update();
 };
 
-const getDiabetesDataPopulationMen = async () => d3.csv("./Men.csv");
-const getDiabetesDataPopulationWomen = async () => d3.csv("./Women.csv");
+const getDiabetesDataPopulationMen = async () => d3.csv("/./datasets/Men.csv");
+const getDiabetesDataPopulationWomen = async () => d3.csv("/./datasets/Women.csv");
 
 export const init = async () => {
   const diabetesDataMen = await getDiabetesDataPopulationMen();

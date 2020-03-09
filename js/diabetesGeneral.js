@@ -64,7 +64,7 @@ const drawDiabetesChart = data => {
   });
 };
 
-const getDiabetesData = async () => d3.csv("./diabetesPrimaryHealthcare.csv");
+const getDiabetesData = async () => d3.csv("/./datasets/diabetesPrimaryHealthcare.csv");
 
 export const init = async () => {
   const diabetesData = await getDiabetesData();

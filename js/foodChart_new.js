@@ -92,11 +92,9 @@ export const init = async () => {
 
     const foodData = await getFoodData();
     originalData = foodData;
-    //const formattedFood = getCategorisedFoodData(foodData);
     drawFoodChart(foodData);
 
 
-    console.log(foodChart.data.datasets);
   };
 
 
