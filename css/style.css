@@ -124,7 +124,7 @@ body {
     display: inline-block;
     width: 22.5px;
     height: 19.5px;
-    background: url("./externalLink.svg");
+    background: url("/img/externalLink.svg");
     margin-left: 0.5rem;
   }
   
@@ -145,4 +145,11 @@ body {
     width: 70%;
     height: auto;
     margin: 0 auto;
+  }
+
+
+  .on {
+    fill: pink;
+    stroke: red;
+    stroke-width: 2;
   }
