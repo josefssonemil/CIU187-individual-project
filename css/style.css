@@ -1,16 +1,56 @@
 /* Spaghetti CSS code, please ignore quick hacks */
 
 body {
-    margin: 0 2rem 2rem;
+   margin:0px;
+
     background-color: #eee;
   }
+
+.white-text h1 {
+  font-family: "Poppins";
+  text-align: center;
+  color: white;
+  font-size: 42px;
+}
+
+.white-text h2 {
+  text-align: left;
+  color: white;
+  margin-bottom: -16px;
+}
+
+.white-text h3,p,em,ul,li{
+  font-family: "Poppins";
+  text-align: left;
+  color: white;
+}
+
+.black-text h1 {
+  font-family: "Poppins";
+  text-align: center;
+  color: black;
+  font-size: 42px;
+}
+
+.black-text h2 {
+  text-align: left;
+  color: black;
+  margin-bottom: -16px;
+}
+
+.black-text h3,p,em,ul,li{
+  font-family: "Poppins";
+    text-align: left;
+    color: black;
+}
   
   em {
     font-style: italic;
   }
   
   h1 {
-    text-align: left;
+    font-family: "Poppins";
+    text-align: center;
     color: black;
     font-size: 42px;
   }
@@ -25,7 +65,6 @@ body {
     margin-bottom: -16px;
   }
   
-  h1,
   h2,
   h3,
   p,
@@ -49,12 +88,13 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
   }
   
   .column {
     display: flex;
     flex-direction: column;
-    flex: 0 1 calc(50% - 2rem);
+    flex: 0 1 calc(50% - 3.5rem);
   }
   
   
@@ -76,10 +116,9 @@ body {
   }
 
   .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("https://images.unsplash.com/photo-1562245376-3f9dae9f0e73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
-  
-    height: 450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1583228888350-c73ad9caec1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    height: 650px;
   
     margin-left: calc(-50vw + 50%);
     width: 100vw;
@@ -91,7 +130,7 @@ body {
   }
   
   .hero-text {
-    text-align: left;
+    text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -100,19 +139,19 @@ body {
   }
   
   .hero-text h1 {
-    font-family: "Noto Serif SC";
-  
+    font-family: "Poppins";  
     margin-left: 30px;
     color: white;
     font-size: 35px;
   }
   
   .hero-text p {
-    font-family: "Noto Serif SC";
-  
+    font-family: "Poppins";  
     color: white;
+    font-size:20px;
     margin-left: 30px;
     margin-top: -12px;
+    text-align:center;
   }
   
   .foodchart-container {
@@ -147,9 +186,41 @@ body {
     margin: 0 auto;
   }
 
-
-  .on {
-    fill: pink;
-    stroke: red;
-    stroke-width: 2;
+  .colour-block {
+    background:#22313f;
+    width:100%;
+    padding:7% 0% 10% 0%;
+    color:#fff;
   }
+
+
+  .white-block {
+    background:#fff;
+    width:100%;
+    padding:7% 0% 10% 0%;
+    color:#22313f;
+  }
+
+  
+  
+  /*----------------*/
+  /*  SCALLOP down  */
+  /*----------------*/
+  .scallop-down{
+    height:100px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#22313f), color-stop(0.49, #22313f), color-stop(0.51, #fff), to(white));
+  -webkit-background-size: 49px 100%;
+  }
+  
+  
+  /*----------------*/
+  /*  SCALLOP up    */
+  /*----------------*/
+  .scallop-up{
+    height:100px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#22313f), color-stop(0.49, #22313f), color-stop(0.51, #fff), to(white));
+  -webkit-background-size: 49px 100%;
+  }
+  

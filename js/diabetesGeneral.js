@@ -48,15 +48,33 @@ const drawDiabetesChart = data => {
 
     // Configuration options go here
     options: {
+      legend: {
+        labels: {
+             fontColor: 'white'
+            }
+         },
       title: {
         display: true,
         text:
-          "Number of patients with diabetes in Primary Healthcare (Sweden)"
+          "Number of patients with diabetes in Primary Healthcare (Sweden)",
+          fontColor: 'white',
       },
       scales: {
         yAxes: [
           {
-            stacked: true
+            stacked: true,
+            fontColor: "white",
+                  ticks: {
+                    fontColor: 'white'
+                },
+          }
+        ],
+        xAxes: [
+          {
+            fontColor: "white",
+                  ticks: {
+                    fontColor: 'white'
+                },
           }
         ]
       }

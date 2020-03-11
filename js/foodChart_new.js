@@ -49,24 +49,42 @@ const drawFoodChart = data => {
     }
 
     const options = {
+
+        legend: {
+            labels: {
+                 fontColor: 'white'
+                }
+             },
         title: {
             display: true,
             text:
-              "Consumption of different sugar rich foods and drinks (1960-2018)"
+              "Consumption of different sugar rich foods and drinks (1960-2018)",
+              fontColor: "white"
+
           },
 
           scales:{
               yAxes: [{
                   display: true,
-                  labelString: "Consumption in kg or litres"
-              }
+                  labelString: "Consumption in kg or litres",
+                  fontColor: "white",
+                  ticks: {
+                    fontColor: 'white'
+                },
+
+              },
+              
 
               ],
 
               xAxes: [
                   {
                       display: true,
-                      labelString: "Year"
+                      labelString: "Year",
+                      fontColor: "white",
+                      ticks: {
+                        fontColor: 'white'
+                    },
                   }
               ]
           }
@@ -185,9 +203,6 @@ noUiSlider.create(slider, {
         changeYearRange(xRange);
     });
       
-      document.getElementById('write-button').addEventListener('click', function () {
-        slider.noUiSlider.reset();
-      });
 
 
 
