@@ -224,3 +224,10 @@ body {
   -webkit-background-size: 49px 100%;
   }
   
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
